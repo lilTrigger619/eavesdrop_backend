@@ -129,7 +129,6 @@ LEFT JOIN MLOG$_TB_RELATION_TEMP TR_TEMP ON TR.RELATION_NO = TR_TEMP.RELATION_NO
 			outFormat: oracledb.OUT_FORMAT_OBJECT,
 		});
 
-		console.log("quer is done running", result.rows.length, result);
 
 		const flags = [];
 		result.rows.forEach((value, _, arr) => {
